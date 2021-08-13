@@ -1,0 +1,328 @@
+
+
+<!doctype html>
+<head>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+   </style>
+   <style>
+      .Encabezado{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #020712;
+      color: #ffffff;
+      height: 70px;
+      font-family: 'Roboto';
+      text-align: center;
+      }
+      input {
+      display: none;
+      }
+      label {
+      display: flex;
+      height: 50px;
+      cursor: pointer;
+      border: 3px solid #3E474F;
+      user-select: none;
+      }
+      label div:first-child {
+      line-height: 45px;
+      margin-left: 10px;
+      font-size: 1.2em;
+      }
+      .cross{
+      margin-right:15px;
+      margin-top:3px;
+      }
+      .cross:before,.cross:after {
+      content: '';
+      border-top: 2px solid #3E474F;
+      width: 15px;
+      display: block;
+      margin-top: 18px;
+      transition: 0.3s;
+      }
+      .cross:after {
+      transform: rotate(90deg);
+      margin-top: -2px;
+      }
+      .content {
+      /*box-sizing: border-box;*/
+      font-size: 0.9em;
+      /*margin: 10px 10px;*/
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height, .5s;
+      }
+      input:checked ~ .content {
+      max-height: 100vh;
+      transition: max-height, 1s;
+      }
+      input:checked ~ label .cross:before {
+      transform: rotate(180deg);
+      }
+      input:checked ~ label .cross:after {
+      transform: rotate(0deg);
+      }
+      .header{
+      font-weight: bold;
+      background-color: #212C46;
+      color: #ffffff;
+      }
+      .col{
+      /*flex-grow:1;*/
+      flex: 0 1 100%;
+      }
+      .row{
+      display: flex;
+      flex-direction: row;
+      font-family: 'Roboto';
+      }
+      p{
+      margin-left: 10px;
+      }
+      .holdeado{
+      background-color: #BB5907;
+      color: #ffffff;
+      }
+      .exito{
+      background-color: #008F39;
+      color: #ffffff;
+      }
+   </style>
+</head>
+<body>
+   <header class="Encabezado">
+      <h1>Reporte de errores la carga 12-08-2021</h1>
+   </header>
+   <section>
+      <input type="radio" id="tab-1" name="tabs">
+      <label for="tab-1">
+         <div>Bloque 1</div>
+         <div class="cross"></div>
+      </label>
+      <div class="content">
+         <div class="row header">
+            <div class="col">
+               <p>Proceso</p>
+            </div>
+            <div class="col">
+               <p>Resultado</p>
+            </div>
+            <div class="col">
+               <p>Duración</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>VAL_AA_GRUPO_ABONADO</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:0 min:4 seg</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>VAL_ONX_GRUPO_ABONADO</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:6 min:53 seg</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>VAL_ONX_REL_GRUPO_ABONADO</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:3 min:9 seg</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>VAL_SCL_DOC_CANCELADO</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:3 min:13 seg</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>AGR_PAGOD_CLI_MES</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:3 min:51 seg</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section>
+      <input type="radio" id="tab-2" name="tabs">
+      <label for="tab-2">
+         <div>Bloque 2</div>
+         <div class="cross"></div>
+      </label>
+      <div class="content">
+         <div class="row header">
+            <div class="col">
+               <p>Proceso</p>
+            </div>
+            <div class="col">
+               <p>Resultado</p>
+            </div>
+            <div class="col">
+               <p>Duración</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>VAL_ONX_MOVIMIENTOS_TT</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:0 min:4 seg</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>VAL_GC_CLIENTES_CONTACTOS</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:0 min:47 seg</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>DIM_CONTACTO</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:0 min:0 seg</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>FCT_MOVIMIENTOS_TT</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:0 min:0 seg</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>FCT_CALC_FINANCIEROS_PRE_01</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:0 min:0 seg</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>FCT_CALC_FINANCIEROS_PRE_02</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:0 min:0 seg</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>FCT_CALC_FINANCIEROS_POST</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:0 min:0 seg</p>
+            </div>
+         </div>
+         <div class="row holdeado">
+            <div class="col">
+               <p>AGR_3D_ABO_TRAF</p>
+            </div>
+            <div class="col">
+               <p>Holdeado</p>
+            </div>
+            <div class="col">
+               <p>0 horas:0 min:0 seg</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section>
+      <input type="radio" id="tab-3" name="tabs">
+      <label for="tab-3">
+         <div>Bloque 3</div>
+         <div class="cross"></div>
+      </label>
+      <div class="content">
+         <div class="row exito">
+            <div class="col">
+               <p>Todos los procesos se concluyeron de forma correcta</p>
+            </div>
+         </div>
+   </section>
+   <section>
+      <input type="radio" id="tab-4" name="tabs">
+      <label for="tab-4">
+         <div>Bloque 4</div>
+         <div class="cross"></div>
+      </label>
+      <div class="content">
+         <div class="row exito">
+            <div class="col">
+               <p>Todos los procesos se concluyeron de forma correcta</p>
+            </div>
+         </div>
+   </section>
+   <section>
+      <input type="radio" id="tab-5" name="tabs">
+      <label for="tab-5">
+         <div>Gráficas</div>
+         <div class="cross"></div>
+      </label>
+      <div class="content">
+         <div class="row">
+            <div class="col">
+               <img src="./ErrBloque1_2021-08-12.png", alt="Errores bloque 1">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+               <img src="./ErrAcumulado_2021-08-12.png", alt="Errores Acumulados 1">
+            </div>
+         </div>
+       </div>
+   </section>
+</body>
+</html>
